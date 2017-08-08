@@ -1,7 +1,7 @@
 import { join } from 'path';
 import { Client, IPlugin, Lang, Logger, Plugin } from 'yamdbf';
 
-export class GermanPlugin extends Plugin implements IPlugin
+export class DutchPlugin extends Plugin implements IPlugin
 {
 	public readonly name: string = 'lang-dutch';
 
