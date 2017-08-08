@@ -19,7 +19,7 @@ export class DutchPlugin extends Plugin implements IPlugin
 		const dir: string = join(__dirname, 'nl_nl');
 		Logger.instance().debug(this.name, `Loading language files from "${dir}"`);
 
-		Lang.setMetaValue('nl_nl', 'name', 'Dutch');
+		Lang.setMetaValue('nl_nl', 'name', 'Nederlands');
 		Lang.loadLocalizationsFrom(dir);
 		Lang.loadCommandLocalizationsFrom(dir);
 	}
