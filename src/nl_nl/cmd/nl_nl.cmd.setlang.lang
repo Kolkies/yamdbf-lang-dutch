@@ -1,0 +1,12 @@
+[CMD_SETLANG_LIST]
+Talen die beschikbaar zijn: (Language marked with `*` is the current language)
+```css
+{{ langList }}
+## Be sure to preserve the `{{ prefix }}setlang #` part
+```Gebruik `{{ prefix }}setlang #`, waarbij de  `#` het nummer van de taal is om aan te zetten.
+
+[CMD_SETLANG_ERR_INVALID]
+Dat is geen keuze
+
+[CMD_SETLANG_SUCCESS]
+Taal veranderd naar: `{{ lang }}`

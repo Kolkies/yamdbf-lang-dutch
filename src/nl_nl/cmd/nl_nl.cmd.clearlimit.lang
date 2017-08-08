@@ -1,0 +1,5 @@
+[CMD_CLEARLIMIT_UNKNOWN_COMMAND]
+Command met de naam `{{ commandName }}` niet gevonden
+
+[CMD_CLEARLIMIT_SUCCESS]
+Succesvol alle limieten leeg gemaakt voor command: `{{ commandName }}`

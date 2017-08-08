@@ -1,0 +1,14 @@
+[CMD_WHITELIST_ERR_OWNERONLY]
+Alleen bot eigenaars kunnen globale blacklisten verwijderen.
+
+[CMD_WHITELIST_ERR_NOTGLOBAL]
+Die gebruiker staat niet op de globale blacklist.
+
+[CMD_WHITELIST_ERR_NOTBLACKLISTED]
+Die gebruiker staat niet op de blacklist voor deze server.
+
+[CMD_WHITELIST_GLOBALSUCCESS]
+{{ user }} verwijdert van de globale blacklist.
+
+[CMD_WHITELIST_SUCCESS]
+{{ user }} verwijdert van de blacklist van deze server.

@@ -1,0 +1,19 @@
+[CMD_PREFIX_CURRENT]
+{{!
+    args.prefix ?
+        `Prefix is \`${args.prefix}\`` :
+        'Er is nu geen prefix.'
+!}}
+
+[CMD_PREFIX_ERR_CHAR_LIMIT]
+Prefix mag maximaal 10 karakters hebben.
+
+[CMD_PREFIX_SUCCESS]
+De prefix mag niet bestaan uit accent graves of backslashes.
+
+[CMD_PREFIX_ERR_INVALID_CHARS]
+{{!
+    args.prefix === '' ?
+        'Command prefix verwijderd.' :
+        `Command prefix is veranderd naar \`${args.prefix}\``
+!}}

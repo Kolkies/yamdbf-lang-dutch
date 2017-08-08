@@ -1,0 +1,89 @@
+{
+    "blacklist": {
+        "nl_nl": {
+            "desc": "Blacklist een gebruiker om commands te gebruiken.",
+            "usage": "<prefix>blacklist <'add'|'remove'> <user> ['global']",
+            "info": "Als het global is kan de gebruiker nergens meer commands uitvoeren"
+        }
+    },
+    "eval": {
+        "nl_nl": {
+            "desc": "Berekend gegeven Javascript code",
+            "usage": "<prefix>eval <...code>"
+        }
+    },
+    "eval:ts": {
+        "nl_nl": {
+            "desc": "Berekend gegeven Typescript code",
+            "usage": "<prefix>eval:ts <...code>",
+            "info": "Loopt vrij langzaam te wijten aan het hebben van diagnostiek uit te voeren voordat het compileren. Als Typescript niet is geïnstalleerd de code zal worden geëvalueerd als Javascript en diagnostiek / compilatie worden overgeslagen."
+        }
+    },
+    "clearlimit": {
+        "nl_nl": {
+            "desc": "Verwijder rolbeperkingen van een opdracht",
+            "usage": "<prefix>clearlimit <command>"
+        }
+    },
+    "disablegroup": {
+        "nl_nl": {
+            "desc": "Schakel een opdrachtgroep uit",
+            "usage": "<prefix>disablegroup <group>",
+            "info": "Schakelt een opdrachtgroep uit zodat alle commando's in de groep niet op deze server kunnen worden gebruikt."
+        }
+    },
+    "enablegroup": {
+        "nl_nl": {
+            "desc": "Schakel een opdrachtgroep in",
+            "usage": "<prefix>enablegroup <group>",
+            "info": "Schakelt een opdrachtgroep in zodat alle commando's in de groep niet op deze server kunnen worden gebruikt."
+        }
+    },
+    "limit": {
+        "nl_nl": {
+            "desc": "Beperk een opdracht om de geleverde rollen",
+            "usage": "<prefix>limit <command>, <role names, ...>",
+            "info": "De komma na het command - voor de lijst rolnamen - is noodzakelijk."
+        }
+    },
+    "listgroups": {
+        "nl_nl": {
+            "desc": "Laat alle groepen zien met hun status",
+            "usage": "<prefix>listgroups",
+            "info": "Een '*' duid een gedisablede group aan  listing all command groups."
+        }
+    },
+    "help": {
+        "nl_nl": {
+            "desc": "Laat de bot commands zien",
+            "usage": "<prefix>help [command]",
+            "info": "De bot laat je de commands zien in je Direct Messages"
+        }
+    },
+    "ping": {
+        "nl_nl": {
+            "desc": "Pong!",
+            "usage": "<prefix>ping"
+        }
+    },
+    "reload": {
+        "nl_nl": {
+            "desc": "Herlaad een command van de bot",
+            "usage": "<prefix>reload [command]",
+            "info": "Als een command aangepast is dan kan je het herladen. Anders, wordt de hele bot herladen."
+        }
+    },
+    "setlang": {
+        "nl_nl": {
+            "desc": "Laat de language van de bot zetten",
+            "usage": "<prefix>setlang [lang]"
+        }
+    },
+    "setprefix": {
+        "nl_nl": {
+            "desc": "Zet de prefix van de bot",
+            "usage": "<prefix>setprefix [prefix]",
+            "info": "De prefix moet geen / of een \ hebben en het moet 1-10 karakters hebben. Gebruik \"clear\" om de prefix te verwijderen en de bot te gebruiken zonder prefix"
+        }
+    }
+}

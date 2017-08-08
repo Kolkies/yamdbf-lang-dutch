@@ -1,0 +1,20 @@
+[CMD_LIMIT_ERR_UNKNOWN_COMMAND]
+Ik kon geen command vindeb met de naam `{{ commandName }}`
+
+[CMD_LIMIT_ERR_INVALID_GROUP]
+Kan de base commands niet limiten.
+
+[CMD_LIMIT_ERR_ALREADY_LIMITER]
+ROl `{{ roleName }}` is al in gebruik met een limit voor command: `{{ commandName }}`
+[CMD_LIMIT_ERR_INVALID_ROLE]
+Fout: {{!
+    args.invalidRoles.split(',').length > 1 ? 'roles' : 'role'
+!}}: {{ invalidRoles }}
+
+[CMD_LIMIT_ERR_NO_ROLES]
+Fout met rollen toevoegen aan het command.
+
+[CMD_LIMIT_SUCCESS]
+Ik heb  {{!
+    args.roles.split(',').length > 1 ? 'roles' : 'role'
+!}}: {{ roles }} succesvol toegevoegd aan het command: `{{ commandName }}`

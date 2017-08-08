@@ -1,0 +1,8 @@
+[CMD_DISABLEGROUP_ERR_NOEXIST]
+Command groep "{{ group }}" bestaat niet.
+
+[CMD_DISABLEGROUP_ERR_DISABLED]
+Command groep "{{ group }}" is al gedisabled of mag niet gedisabled worden.
+
+[CMD_DISABLEGROUP_SUCCESS]
+**Command groep "{{ group }}" succesvol gedisabled**

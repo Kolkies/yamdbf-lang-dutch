@@ -1,0 +1,72 @@
+[RESOLVE_TYPE]
+## Only translate the return values here
+{{!
+    switch (args.type)
+    {
+        case 'User': return 'Gebruiker';
+        case 'Member': return 'Member';
+        case 'BannedUser': return 'Gebannde Gebruiker';
+        case 'Channel': return 'Kanaal';
+        case 'Role': return 'Rol';
+        default: return;
+    }
+!}}
+
+[RESOLVE_ERR_RESOLVE_NUMBER]
+in arg `{{ name }}`: `{{ arg }}` kan er geen nummer worden gevonden.
+Gebruik: `{{ usage }}`
+
+[RESOLVE_ERR_RESOLVE_DURATION]
+in arg `{{ name }}`: `{{ arg }}` kan er geen tijd worden gevonden.
+Gebruik: `{{ usage }}`
+Tijd voorbeelden: `10m`, `2h`, `1.5d`
+
+[RESOLVE_ERR_RESOLVE_TYPE_ID]
+in arg `{{ name }}`: Mislukt te vinden in {{! res('RESOLVE_TYPE') !}} met ID `{{ arg }}`
+Gebruik: `{{ usage }}`
+
+[RESOLVE_ERR_RESOLVE_TYPE_TEXT]
+in arg `{{ name }}`:  Mislukt te vinden in {{! res('RESOLVE_TYPE') !}} met de tekst `{{ arg }}`
+Gebruik: `{{ usage }}`
+
+[RESOLVE_ERR_MULTIPLE_USER_RESULTS]
+Meerdere potentiële gebruikers gevonden voor argument `{{ name }}`:
+{{!
+    const users = args.users.split(', ');
+    if (users.length > 5)
+    {
+        const slice = users.slice(0, 5);
+        return `${slice.join(', ')}, plus ${users.length - slice.length} meer.`
+    }
+    else return users.join(', ');
+!}}
+Zoek nog een keer of gebruik een ID/Mention
+Gebruik: `{{ usage }}`
+
+[RESOLVE_ERR_MULTIPLE_CHANNEL_RESULTS]
+Meerdere potentiële kanalen gevonden voor argument `{{ name }}`:
+{{!
+    const channels = args.channels.split(', ');
+    if (channels.length > 5)
+    {
+        const slice = channels.slice(0, 5);
+        return `${slice.join(', ')}, plus ${channels.length - slice.length} meer.`
+    }
+    else return channels.join(', ');
+!}}
+Zoek nog een keer of gebruik een ID/channel link
+Gebruik: `{{ usage }}`
+
+[RESOLVE_ERR_MULTIPLE_ROLE_RESULTS]
+Meerdere potentiële rollen gevonden voor argument `{{ name }}`:
+{{!
+    const roles = args.roles.split(', ');
+    if (roles.length > 5)
+    {
+        const slice = roles.slice(0, 5);
+        return `${slice.join(', ')}, plus ${roles.length - slice.length} more.`
+    }
+    else return roles.join(', ');
+!}}
+Please refine your search or consider using an ID/role mention
+Gebruik: `{{ usage }}`

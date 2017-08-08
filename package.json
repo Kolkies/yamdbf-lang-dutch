@@ -1,0 +1,43 @@
+{
+  "name": "yamdbf-lang-dutch",
+  "version": "1.0.0",
+  "description": "Dutch localization for the yamdbf-framework",
+  "main": "bin/index",
+  "typings": "bin/index.d.ts",
+  "scripts": {
+    "postinstall": "postinstall-build --only-as-dependency bin \"npm run build -s\"",
+    "build": "gulp",
+    "package": "gulp clean-package && gulp package"
+  },
+  "keywords": [
+    "discord",
+    "yamdbf",
+    "plugin",
+    "bot",
+    "node",
+    "dutch"
+  ],
+  "author": "Kolkies",
+  "license": "MIT",
+  "dependencies": {
+    "postinstall-build": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-typescript": "^3.2.1",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.2",
+    "yamdbf": "github:zajrik/yamdbf"
+  },
+  "buildDependencies": [
+    "typescript",
+    "del",
+    "gulp",
+    "gulp-typescript",
+    "gulp-sourcemaps",
+    "@types/node"
+  ]
+}

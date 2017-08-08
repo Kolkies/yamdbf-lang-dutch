@@ -1,0 +1,8 @@
+[CMD_ENABLEGROUP_ERR_NOEXIST]
+Command groep "{{ group }}" bestaat niet.
+
+[CMD_ENABLEGROUP_ERR_ENABLED]
+Command goep "{{ group }}" is al enabled.
+
+[CMD_ENABLEGROUP_SUCCESS]
+**Command groep "{{ group }}" succesvol enabled*

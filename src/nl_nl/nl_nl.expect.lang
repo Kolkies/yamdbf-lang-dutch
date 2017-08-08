@@ -1,0 +1,18 @@
+[EXPECT_ERR_MISSING_VALUE]
+Je mist een van de argumenten: `{{ name }}`{{!
+    args.type.split(', ').length > 1
+        ? `\nJe mist: ${args.type}`
+        : `, Mist ${args.type}`
+!}}
+Gebruik: `{{ usage }}`
+
+[EXPECT_ERR_INVALID_OPTION]
+in de argumenten `{{ name }}`: `{{ arg }}` is het geen optie.
+Gebruik: `{{ usage }}`
+Mogelijke opties voor de argumenten `{{ name }}`: {{ type }}
+
+[EXPECT_ERR_EXPECTED_TYPE]
+## This is a developer error message and does
+## not need to be translated. I have only extracted
+## this string for ease of re-use as it is used a lot
+in arg `{{ name }}`: `{{ expected }}` expected, got `{{ type }}`

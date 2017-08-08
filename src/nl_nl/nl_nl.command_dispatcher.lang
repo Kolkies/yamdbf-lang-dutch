@@ -1,0 +1,40 @@
+[DISPATCHER_ERR_RATELIMIT_EXCEED_GLOBAL]
+Je hebt teveel commands gebruikt en je kan voor **{{ time }}** geen commands uitvoeren.
+
+[DISPATCHER_ERR_RATELIMIT_EXCEED]
+Je hebt dit command teveel gebruikt en je kan het voor **{{ time }}** niet gebruiken.
+
+[DISPATCHER_ERR_UNKNOWN_COMMAND]
+Sorry, ik kan geen command in je bericht vinden.
+Gebruik "help" om de commands te zien.
+
+[DISPATCHER_ERR_GUILD_ONLY]
+Dat command is alleen voor servers. Gebruik "help" om de commands te zien.
+
+[DISPATCHER_ERR_MISSING_CLIENT_PERMISSIONS]
+**Ik heb de volgende permissies nodig{{!
+    args.missing.split(', ').length > 1 ? 's' : ''
+!}} om dit command uit te kunnen voeren in dit kanaal:**
+```css
+{{ missing }}
+```
+
+[DISPATCHER_ERR_MISSING_CALLER_PERMISSIONS]
+**Jij hebt niet de goede permissies{{!
+    args.missing.split(', ').length > 1 ? 's' : ''
+!}} voor dat command:**
+```css
+{{ missing }}
+```
+
+[DISPATCHER_ERR_MISSING_ROLES]
+## This message is used for the missing roles error
+## and for failing to pass the command limiter
+**Je moet {{!
+    args.roles.split(', ').length > 1
+        ? 'een van de volgende rollen hebben om'
+        : 'de volgende rol nodig om '
+!}} dat command uit te voeren:**
+```css
+{{ roles }}
+```
